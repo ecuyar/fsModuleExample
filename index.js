@@ -32,12 +32,22 @@ fs.appendFile("exampleTexts/sampleNewFile.txt", "NEW LINE IS ADDED", (err) => {
 });
 //#endregion
 
-//#region create folder
+// //#region create folder
 fs.mkdir("folder1/folder2", { recursive: true }, (err) => {
 	if (err) {
 		console.log("🚀 ~ file: index.js:38 ~ fs.mkdir ~ err:", err);
 		return;
 	}
 	console.log("Folders are created.");
+});
+//#endregion
+
+//#region delete folder
+fs.rm("folder1", { recursive: true }, (err) => {
+	if (err) {
+		console.log("🚀 ~ file: index.js:48 ~ fs.rmdir ~ err:", err);
+		return;
+	}
+	console.log("File(s) is/are deleted.");
 });
 //#endregion
