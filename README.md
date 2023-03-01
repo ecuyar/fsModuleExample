@@ -11,4 +11,6 @@ You can find some examples from the package.
 
 ## Getting Started
 
-Install [NodeJs](https://nodejs.org/) and run desired methods of the program.
+Install [NodeJs](https://nodejs.org/) and comment methods which you don't want to run.
+
+Run the program by ``node index``
